@@ -19,7 +19,7 @@ before_script:
     - composer check
 
 script:
-    - vendor/bin/jigsaw build production
+    - npm run production
 
 # see docs: https://www.statie.org/docs/github-pages/
 deploy:
