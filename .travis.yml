@@ -19,6 +19,7 @@ install:
 before_script:
     - phpenv config-rm xdebug.ini || return 0
     - composer check
+    - nodejs --version
 
 script:
     - npm run production

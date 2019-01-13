@@ -8,6 +8,7 @@ mix.setPublicPath('source/assets/build/');
 mix.webpackConfig({
     plugins: [
         build.jigsaw,
+        build.browserSync(),
         build.watch([
             'config.php',
             'source/**/*.md',
