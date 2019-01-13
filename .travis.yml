@@ -7,8 +7,10 @@ branches:
         - master
 
 cache:
+    npm: true
     directories:
     - $HOME/.composer/cache
+    - node_modules
 
 install:
     - composer install
