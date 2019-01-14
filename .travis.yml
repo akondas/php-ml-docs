@@ -2,6 +2,8 @@ language: php
 
 php: 7.2
 
+node_js: 10
+
 branches:
     only:
         - master
@@ -19,7 +21,6 @@ install:
 before_script:
     - phpenv config-rm xdebug.ini || return 0
     - composer check
-    - nodejs --version
 
 script:
     - npm run production
